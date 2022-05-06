@@ -1,0 +1,153 @@
+*{
+	font-size: 20px;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+body{
+	box-sizing: border-box;
+}
+
+.head-menu{
+	padding: 10px 5%;
+	display: grid;
+	/*display: flex;*/
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	background-color: purple;
+	height: 60px;
+}
+ 
+nav{
+	display: flex;
+	column-gap: 20px;
+}
+.site-links a{
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.social-contacts{
+	display: flex;
+	column-gap: 13px;
+	color: white;
+	justify-content: flex-end;
+	text-align: right;
+}
+.mobile-menu{
+	display: none;
+}
+.contacts{
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.about{
+	line-height: 1.4em;
+	padding: 50px 5% 50px;
+	display: grid;
+	gap: 10px;
+	flex-direction: column;
+	background-color: #f2f2f2;
+}
+footer{
+	background-color: rgb(0, 10, 255);
+	min-height: 400px;
+	text-align: center;
+	padding: 100px 5% 60px; 
+}
+.footer{
+	margin-bottom: 25px;
+}
+.footer h2{
+	font-size: 46px;
+	font-weight: bold;
+}
+.footer span{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.footer button{
+	background-color: black;
+	background: rgb(97, 92, 253);
+    display: inline-block;
+    padding: 14px 38px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgb(0 0 0 / 0%);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    font-family: Calibri;
+    cursor: pointer;
+    letter-spacing: 0.115em;
+    color: rgb(255, 255, 255) !important;
+}
+.footlinks{
+	display: flex;
+    border-bottom: 1px solid rgb(51, 74, 96);
+	padding: 100px 0px 60px;
+	justify-content: space-between;	
+}
+
+
+@media(max-width: 768px){
+	.mobile-menu{
+		display: block;
+		justify-self:flex-end;
+		color: white;
+	}
+	.head-menu{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.social-contacts{
+		display: none;
+	}
+	nav{
+	display: flex;
+	row-gap: 20px;
+	flex-direction: column;
+	background-color: purple;
+	width: 50vw;
+	height: 40vh;
+	padding: 5%;
+}
+.head-menu{
+	padding:0 5% 0 0;	
+}
+.logo{
+	padding-left: 5%;
+}
+.mobile{
+	transform: translateX(-500px);
+	transition: all 0.5s ease-in-out 0.2s;
+}
+.mobile.show{
+	transform: translateX(-20px);
+	transition: all 0.5s ease-in-out 0.2s;
+}
+.skill-card{
+	display: block;
+	row-gap: 10px;
+}
+ .card{
+ 	width: 80vw;
+ 	margin-bottom: 10px;
+ }
+ .about{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ .about-2{
+ 	padding: 10px 12px;
+ }
+ .about-2 img{
+ 	width: 70vw;
+ }
+ .contacts{
+ 	justify-self: flex-start;
+ }
+}
